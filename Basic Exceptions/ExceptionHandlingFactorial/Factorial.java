@@ -1,3 +1,4 @@
+// Exception class
 class InvalidInputException extends Exception{
 	public InvalidInputException() {
 		super();
@@ -9,9 +10,11 @@ class FactorialException extends Exception{
 		super();
 	}
 }
+// class factorial
 public class Factorial {
 	private int num;
 	private int fact;
+	// method to get the factorial of a number
 	public int getfactorial(int num) throws InvalidInputException,FactorialException
 	{
 		if(num<2) {
